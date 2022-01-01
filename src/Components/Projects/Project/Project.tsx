@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Project.module.scss'
-import projectImg from '../../common/images/photo-1572177812156-58036aae439c.jpg'
+import projectImg from '../../../common/images/photo-1572177812156-58036aae439c.jpg'
 
 export const Project = () => {
     return (

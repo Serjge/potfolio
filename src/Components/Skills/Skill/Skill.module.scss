@@ -1,8 +1,8 @@
-@import "src/common/styles/variables";
+@import "../../../common/styles/variables";
 
 .skill {
     width: 250px;
-    background: $bgColorSkill;
+    background: var(--theme--bgColorSkill);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,6 +19,6 @@
 .icon {
     width: 60px;
     height: 60px;
-    background: $bgIconColorSkill;
+    background: var(--theme--bgIconColorSkill);
     margin-top: 20px;
 }

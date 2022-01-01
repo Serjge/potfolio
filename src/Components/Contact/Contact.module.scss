@@ -1,7 +1,7 @@
-//@import "src/common/styles/variables";
+@import "src/common/styles/variables";
 
 .contactBlock {
-  background: darkmagenta;
+  background: var(--theme--bgColorContact);
 }
 
 .contactWrapper {

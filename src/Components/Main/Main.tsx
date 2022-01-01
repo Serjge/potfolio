@@ -1,11 +1,15 @@
 import React from 'react';
 import styles from './Main.module.scss'
-import styleContainer from '../common/styles/Container.module.scss'
-import avatar from  '../common/images/50be3f19d835269906d360b1bc5173f4.png'
+import styleContainer from '../../common/styles/Container.module.scss'
+import avatar from '../../common/images/50be3f19d835269906d360b1bc5173f4.png'
 
-export const Main = () => {
+type MainPropsType = {
+    theme: string
+}
+
+export const Main = ({theme}:MainPropsType) => {
     return (
-        <div className={styles.main}>
+        <div className={`${styles.main} ${theme}`}>
             <div className={`${styleContainer.container} ${styles.mainContainer}`}>
                 <div className={styles.text}>
                     <span>Hi There</span>

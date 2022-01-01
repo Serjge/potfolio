@@ -1,7 +1,7 @@
-@import "src/common/styles/variables";
+@import "../../common/styles/variables";
 
 .skillsBlock {
-  background: $bgColorSkills;
+  background: var(--theme--bgColorSkills);
 }
 
 .skills {

@@ -1,0 +1,31 @@
+.light {
+  --theme-color: #A80000;
+  --theme-page-background: #FFF;
+  --theme-page-text: #111;
+  --theme--bgColorHeader : antiquewhite;
+  --theme--bgColorMain : cornflowerblue;
+  --theme--bgColorSkills : darkcyan;
+  --theme--bgColorSkill: antiquewhite;
+  --theme--bgColorFooter : #b6a1c5;
+  --theme--bgColorContact : #7a617a;
+  --theme--bgColorProject : cornflowerblue;
+
+  --theme--bgIconColorSkill : darkgrey;
+}
+
+.dark {
+  --theme-color: #0000A8;
+  --theme-page-background: #111;
+  --theme-page-text: #FFF;
+  --theme--bgColorHeader : #00ffc4;
+  --theme--bgColorMain : #0d1b33;
+  --theme--bgColorSkills : #103434;
+  --theme--bgColorSkill: #be7c1e;
+  --theme--bgColorContact : darkmagenta;
+  --theme--bgColorProject : #1cc00e;
+  --theme--bgColorFooter : blueviolet;
+
+
+
+  --theme--bgIconColorSkill : #0d1b33;
+}

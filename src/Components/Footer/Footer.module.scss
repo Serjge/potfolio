@@ -1,7 +1,7 @@
-@import "src/common/styles/variables";
+@import "../../common/styles/variables";
 
 .footerBlock {
-  background: $bgColorFooter;
+  background: var(--theme--bgColorFooter);
 
 }
 
@@ -16,9 +16,16 @@
   }
 }
 
-.socialWrapper a svg {
+//.socialWrapper a svg {
+//  width: 100%;
+//  height: 100%;
+//  margin: 10px;
+//  display: block;
+//}
+ .socialWrapper svg {
   width: 100%;
   height: 100%;
   margin: 10px;
+  display: block;
 }
 
