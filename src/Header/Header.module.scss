@@ -1,8 +1,8 @@
+@import "src/common/styles/variables";
+
 .header {
     height: 80px;
-    /*width: 80%;*/
-    background: antiquewhite;
-
+    background: $bgColorHeader;
 }
 
 .headerNav {

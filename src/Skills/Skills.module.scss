@@ -1,0 +1,19 @@
+@import "src/common/styles/variables";
+
+.skillsBlock {
+  background: $bgColorSkills;
+}
+
+.skills {
+  border: 1px solid;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 0;
+
+  @media (max-width: 750px) {
+    justify-content: center;
+  }
+}
+

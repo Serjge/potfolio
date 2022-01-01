@@ -1,0 +1,17 @@
+@import "src/common/styles/variables";
+
+.projectsBlock {
+  background: $bgColorProject;
+}
+
+.projectWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  @media (max-width: 1030px) {
+    justify-content: center;
+  }
+}
+

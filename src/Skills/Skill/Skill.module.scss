@@ -1,0 +1,24 @@
+@import "src/common/styles/variables";
+
+.skill {
+    width: 250px;
+    background: $bgColorSkill;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    & h3 {
+        margin-top: 20px;
+    }
+    & span {
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+.icon {
+    width: 60px;
+    height: 60px;
+    background: $bgIconColorSkill;
+    margin-top: 20px;
+}
