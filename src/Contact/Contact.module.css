@@ -1,0 +1,39 @@
+.contactBlock {
+    background: darkmagenta;
+}
+
+.contactWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+.contactWrapper > input, textarea {
+    margin: 10px 0;
+    min-width: 160px;
+    min-height: 30px;
+}
+
+.contactWrapper > textarea {
+    /*width: 60%;*/
+    height: 150px;
+    resize: none;
+}
+
+.contactWrapper button {
+    width: 250px;
+    margin: 10px 0 30px 0;
+    min-height: 30px;
+    align-self: center;
+    /*margin-bottom: 30px;*/
+}
+
+@media   (max-width: 800px) {
+    .contactWrapper {
+        width: auto;
+    }
+    .contactWrapper button {
+        width: 80px;
+    }
+}

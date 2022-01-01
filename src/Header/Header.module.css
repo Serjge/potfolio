@@ -1,0 +1,13 @@
+.header {
+    height: 80px;
+    /*width: 80%;*/
+    background: antiquewhite;
+
+}
+
+.headerNav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+

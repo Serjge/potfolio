@@ -1,0 +1,22 @@
+.container {
+    border: 1px solid;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+
+
+}
+
+.containerFlex {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    background: darkgrey;
+    margin: 30px;
+}
+
+
