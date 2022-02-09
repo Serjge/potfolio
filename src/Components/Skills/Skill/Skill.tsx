@@ -2,16 +2,20 @@ import React from 'react';
 import styles from './Skill.module.scss'
 
 type SkillPropsType = {
-    title: string
+    name: string
+    description: string
+    imgUrl: string
     theme: string
 }
 
-export const Skill = ({title, theme}: SkillPropsType) => {
+export const Skill = ({theme, name, imgUrl, description}: SkillPropsType) => {
     return (
         <div className={`${styles.skill} ${theme}`}>
-            <div className={styles.icon}></div>
-            <h3>{title}</h3>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur corporis dicta ducimus error harum illum ipsum natus non numquam odit, officiis pariatur perferendis, quo quod rerum? Accusantium amet atque obcaecati.</span>
+            <div className={styles.icon}>
+                <img src={imgUrl} alt={name + 'picture'}/>
+            </div>
+            <h3>{name}</h3>
+            <span>{description}</span>
         </div>
     );
 };

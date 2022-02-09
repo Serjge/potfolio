@@ -1,60 +1,121 @@
 .projectBlock {
-    max-width: 400px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
+  max-width: 600px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
 
-  & h3 {
-    margin-top: 20px;
+  & .imgContainer {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    margin: 20px 20px 0 20px;
+    border-radius: 10px;
+
+    & .title {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 25%; /* Отступ сверху */
+      font-size: 1.900em; /* Размер текста заголовка */
+      text-align: center;
+      text-transform: uppercase; /* Заглавные буквы */
+      z-index: 1;
+      transition: top .5s ease;
+      @media (max-width: 550px) {
+
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: 0.25px;
+
+
+      }
+    }
+
+    & .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Настройка цвета и прозрачности для блока с заголовком */
+      transition: background 0.5s ease;
+      border-radius: 10px;
+    }
+
+    & .menu {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 35%; /* Отступ сверху */
+      text-align: center;
+      opacity: 0;
+      transition: opacity .35s ease;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+
+      & a {
+        text-decoration: none;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0;
+        margin: 15px;
+        padding: 15px 40px; /* Отступ */
+        text-align: center;
+        background: #ff921e; /* Цвет кнопки */
+        color: white; /* Цвет текста */
+        z-index: 1;
+        border-radius: 8px;
+        @media (max-width: 550px) {
+          margin: 10px;
+          padding: 10px 40px; /* Отступ */
+        }
+
+      }
+    }
+
+    &:hover {
+      & .title {
+        top: 10%
+      }
+
+      & .overlay {
+        display: block;
+        background: rgba(0, 0, 0, 0.9); /* Настройка цвета и прозрачности для блока с заголовком при наведении */
+      }
+
+      & .menu {
+        display: flex;
+        opacity: 1;
+      }
+    }
+
+    & img {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 10px;
+    }
+
   }
 
   & p {
+    max-width: 90%;
     padding: 20px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.4399999976158142px;
+    text-align: left;
+
   }
 }
 
-.menu {
-    display: none;
-    position: absolute;
-    background-color: #ccc;
-    width: 100%;
-    height: 98%;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    opacity: .5;
-    z-index: 1;
 
-    & a {
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: bold;
-        color: black;
-        padding: 10px;
-        background: cornflowerblue;
-        opacity: 2;
-        z-index: 10;
-    }
-}
 
-.imgContainer {
-    position: relative;
-    max-width: 350px;
-    max-height: 350px;
-    margin: 20px 20px 0 20px;
-
-  &:hover {
-    opacity: 0.5;
-
-    & .menu {
-      display: flex;
-    }
-  }
-
-  & img {
-    max-width: 100%;
-    max-height: 100%;
-  }
-
-}

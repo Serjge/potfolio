@@ -7,14 +7,16 @@ type MainPropsType = {
     theme: string
 }
 
-export const Main = ({theme}:MainPropsType) => {
+export const Main = ({theme}: MainPropsType) => {
     return (
         <div className={`${styles.main} ${theme}`}>
             <div className={`${styleContainer.container} ${styles.mainContainer}`}>
                 <div className={styles.text}>
-                    <span>Hi There</span>
-                    <h1>I am Serjge</h1>
-                    <p>Frontend Developer</p>
+
+                    <h1>I am <span>Sergey Dudkin </span> Frontend Developer</h1>
+                    <h5>This is my portfolio and resume made in CRA, here you can see my
+                        projects.</h5>
+                    <h5> I hope you like it!</h5>
                 </div>
                 <div className={styles.photo}>
                     <img src={avatar} alt="avatar"/>

@@ -5,27 +5,26 @@
   --theme--bgColorHeader : antiquewhite;
   --theme--bgColorMain : cornflowerblue;
   --theme--bgColorSkills : darkcyan;
-  --theme--bgColorSkill: antiquewhite;
+  --theme--bgColorSkill: #3D3D3D;
   --theme--bgColorFooter : #b6a1c5;
   --theme--bgColorContact : #7a617a;
   --theme--bgColorProject : cornflowerblue;
 
-  --theme--bgIconColorSkill : darkgrey;
+  --theme--FontColorNav : #0d1b33;
 }
 
 .dark {
   --theme-color: #0000A8;
-  --theme-page-background: #111;
+  --theme-page-background: #1C1E22;
   --theme-page-text: #FFF;
-  --theme--bgColorHeader : #00ffc4;
-  --theme--bgColorMain : #0d1b33;
-  --theme--bgColorSkills : #103434;
-  --theme--bgColorSkill: #be7c1e;
-  --theme--bgColorContact : darkmagenta;
-  --theme--bgColorProject : #1cc00e;
-  --theme--bgColorFooter : blueviolet;
+  --theme--bgColorHeader : #1C1E22;
+  --theme--bgColorMain : #1C1E22;
+  --theme--bgColorSkills : #1C1E22;
+  --theme--bgColorSkill: #1F1F21;
+  --theme--bgColorContact : #1C1E22;
+  --theme--bgColorProject : #1C1E22;
+  --theme--bgColorFooter : #1C1E22;
 
-
-
-  --theme--bgIconColorSkill : #0d1b33;
+  --theme--FontColorNav :  rgba(255, 255, 255, 1);
+;
 }

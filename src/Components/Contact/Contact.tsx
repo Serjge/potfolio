@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from "./Contact.module.scss";
 import styleContainer from "../../common/styles/Container.module.scss";
+import {Button} from "../Button/Button";
 type ContactPropsType = {
     theme: string
 }
@@ -9,16 +10,16 @@ export const Contact = ({theme}:ContactPropsType) => {
     return (
         <div className={`${styles.contactBlock} ${theme}`}>
             <div className={`${styleContainer.container} ${styleContainer.containerFlex}`}>
-                <h2 className={styleContainer.title}>Contact</h2>
+                <h3 className={styleContainer.title}>Contact</h3>
 
                 <form className={styles.contactWrapper}>
                     Name
                     <input type={"text"}/>
-                    email
+                    Email
                     <input type={"email"}/>
-                    you message
+                    You message
                     <textarea />
-                    <button>Send</button>
+                    <Button label={'Send'} onClick={()=>{}}/>
                 </form>
 
 

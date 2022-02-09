@@ -9,7 +9,7 @@ import {Telegram} from "../../common/icon/Telegram";
 type FooterPropsType = {
     theme: string
 }
-export const Footer = ({theme}:FooterPropsType) => {
+export const Footer = ({theme}: FooterPropsType) => {
     return (
         <footer className={`${styles.footerBlock} ${theme}`}>
             <div className={`${styleContainer.container} ${styleContainer.containerFlex}`}>
@@ -20,12 +20,12 @@ export const Footer = ({theme}:FooterPropsType) => {
                     {/*<a rel="noreferrer noopener" target="_blank" href={"https://github.com"}><GitHub/></a>*/}
                     {/*<a rel="noreferrer noopener" target="_blank" href={"https://t.me"}><Telegram/></a> */}
 
-                    <Linkedin/>
-                    <VK/>
-                    <GitHub/>
-                    <Telegram/>
+                    <a rel="noreferrer noopener" target="_blank" href={"https://linkedin.com"}><Linkedin/></a>
+                    <a rel="noreferrer noopener" target="_blank" href={"https://vk.com"  }><VK/></a>
+                    <a rel="noreferrer noopener" target="_blank" href={"https://github.com"}><GitHub/></a>
+                    <a rel="noreferrer noopener" target="_blank" href={"https://t.me"}><Telegram/></a>
                 </div>
-                © 2022 Serjge Все права защищены
+                <span className={styles.span}>                © 2022 Serjge Все права защищены </span>
             </div>
 
         </footer>
