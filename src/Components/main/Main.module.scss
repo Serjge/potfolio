@@ -1,0 +1,56 @@
+.mainContainer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 150px 30px 60px 30px;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    margin-top: 0;
+    justify-content: center;
+  }
+}
+
+.text {
+  max-width: 700px;
+  @media (max-width: 768px) {
+    max-width: 280px;
+
+  }
+
+  & span {
+    color: rgba(249, 181, 58, 1);
+  }
+
+  & h1 {
+    margin-bottom: 45px;
+    @media (max-width: 768px) {
+      max-width: 280px;
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 40px;
+      letter-spacing: 0.25px;
+      text-align: center;
+
+    }
+  }
+
+  & h5 {
+    margin: 0 auto;
+    max-width: 446px;
+  }
+}
+
+.photo {
+  margin-top: 40px;
+  max-width: 280px;
+  height: 280px;
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+}

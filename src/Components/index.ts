@@ -1,0 +1,10 @@
+export {Nav} from './nav'
+export {Skill, Skills} from './skills'
+export {Project, Projects} from './projects'
+export {Main} from './main'
+export {Footer} from './footer'
+export {Header} from './header'
+export {Contact} from './contact'
+export {Button} from './button'
+export {Wrapper} from './wrapper'
+
