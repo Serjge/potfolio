@@ -2,7 +2,7 @@
   --theme-color: #A80000;
   --theme-page-background: #FFF;
   --theme-page-text: #111;
-  --theme--bgColorHeader : antiquewhite;
+  --theme--bgColorHeader : red ;
   --theme--bgColorMain : cornflowerblue;
   --theme--bgColorSkills : darkcyan;
   --theme--bgColorSkill: #3D3D3D;
@@ -26,5 +26,7 @@
   --theme--bgColorFooter : #1C1E22;
 
   --theme--FontColorNav :  rgba(255, 255, 255, 1);
+  --theme--FontColorNavActive : rgb(101, 101, 101);
+  --theme--FontColorNavHover : rgb(163, 166, 171);
 ;
 }

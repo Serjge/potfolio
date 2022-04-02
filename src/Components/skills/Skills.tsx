@@ -61,8 +61,8 @@ export const Skills = () => {
     />
   })
   return (
-    <Wrapper title={'Skills'}>
-      <div className={styles.skills}>
+    <Wrapper id='skills' title={'Skills'}>
+      <div  className={styles.skills}>
         {skillMapping}
       </div>
     </Wrapper>

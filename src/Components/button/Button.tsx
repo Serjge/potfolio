@@ -3,13 +3,14 @@ import 'common/styles/theme/theme.scss'
 
 type  PropsType = {
   label: string
-  onClick: () => void
+  onClick?: () => void
+  type?:"button" | "submit" | "reset" | undefined
 }
 
-export const Button = (props: PropsType) => {
+export const Button = ({onClick, label, type}: PropsType) => {
   return (
-    <button onClick={props.onClick} className={styles.button}>
-      {props.label}
+    <button type={type} onClick={onClick} className={styles.button}>
+      {label}
     </button>
   );
 };

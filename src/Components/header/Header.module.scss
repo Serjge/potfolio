@@ -1,5 +1,8 @@
 .header {
     height: 80px;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
     background: var(--theme--bgColorHeader);
     & button {
         background: rgba(249, 181, 58, 1);

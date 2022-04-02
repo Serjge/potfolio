@@ -1,6 +1,8 @@
 import styles from './Projects.module.scss'
 import {Project, Wrapper} from "Components";
-import projectImg from 'common/images/photo-1572177812156-58036aae439c.jpg'
+import todo from  'common/images/todo.jpg'
+import social from  'common/images/social.jpg'
+import learn from  'common/images/learn.jpg'
 
 type ProjectType = {
   name: string
@@ -12,40 +14,36 @@ type ProjectType = {
 
 const project: ProjectType[] = [
   {
-    name: 'Name Project1',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, exercitationem nam nihil nostrum officia optio quasi tempore? Eius esse hic, officiis perferendis quaerat ullam. Facilis libero obcaecati quis rerum tempora!',
-    imgUrl: projectImg,
-    projectUrl: 'https://serjge.github.io/potfolio/',
-    gitUrl: 'https://github.com/Serjge/potfolio',
+    name: 'Cards Learn',
+    description: 'Изучение карточек. Создание пакета катрочек для изучения' +
+      ' своей темы, можно свой изучать также и чужие.',
+    imgUrl: learn,
+    projectUrl: 'https://serjge.github.io/friday_project/',
+    gitUrl: 'https://github.com/Serjge/friday_project',
   },
   {
-    name: 'Name Project2',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, exercitationem nam nihil nostrum officia optio quasi tempore? Eius esse hic, officiis perferendis quaerat ullam. Facilis libero obcaecati quis rerum tempora!',
-    imgUrl: projectImg,
-    projectUrl: 'https://serjge.github.io/potfolio/',
-    gitUrl: 'https://github.com/Serjge/potfolio',
+    name: 'Todolist',
+    description: 'Todolist это список задач, которые вам нужно выполнить,' +
+      ' или вещей, которые вы хотите сделать. Чаще всего они организованы в порядке приоритета. Традиционно они пишутся на листе бумаги.',
+    imgUrl: todo,
+    projectUrl: 'https://serjge.github.io/todolist/',
+    gitUrl: 'https://github.com/Serjge/todolist/',
   },
   {
-    name: 'Name Project3',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, exercitationem nam nihil nostrum officia optio quasi tempore? Eius esse hic, officiis perferendis quaerat ullam. Facilis libero obcaecati quis rerum tempora!',
-    imgUrl: projectImg,
-    projectUrl: 'https://serjge.github.io/potfolio/',
-    gitUrl: 'https://github.com/Serjge/potfolio',
+    name: 'Social network',
+    description: 'Социальная сеть — это веб-сайт, который позволяет людям со схожими интересами собираться вместе и обмениваться информацией, фотографиями и видео.',
+    imgUrl: social,
+    projectUrl: 'https://serjge.github.io/social_network/',
+    gitUrl: 'https://github.com/Serjge/social_network',
   },
-  {
-    name: 'Name Project4',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, exercitationem nam nihil nostrum officia optio quasi tempore? Eius esse hic, officiis perferendis quaerat ullam. Facilis libero obcaecati quis rerum tempora!',
-    imgUrl: projectImg,
-    projectUrl: 'https://serjge.github.io/potfolio/',
-    gitUrl: 'https://github.com/Serjge/potfolio',
-  },
-  {
-    name: 'Name Project5',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, exercitationem nam nihil nostrum officia optio quasi tempore? Eius esse hic, officiis perferendis quaerat ullam. Facilis libero obcaecati quis rerum tempora!',
-    imgUrl: projectImg,
-    projectUrl: 'https://serjge.github.io/potfolio/',
-    gitUrl: 'https://github.com/Serjge/potfolio',
-  },
+  // {
+  //   name: 'Portfolio',
+  //   description: 'Мое портфолио',
+  //   imgUrl: portfolio,
+  //   projectUrl: 'https://serjge.github.io/potfolio/',
+  //   gitUrl: 'https://github.com/Serjge/potfolio',
+  // },
+
 ]
 
 export const Projects = () => {
@@ -67,7 +65,7 @@ export const Projects = () => {
   })
 
   return (
-    <Wrapper title={'Project'}>
+    <Wrapper id={'projects'} title={'Project'}>
       <div className={styles.projectWrapper}>
         {projectMapping}
       </div>
