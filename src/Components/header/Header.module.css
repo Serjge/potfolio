@@ -1,0 +1,19 @@
+.header {
+  height: 80px;
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
+  background: var(--theme--bgColorHeader);
+}
+.header button {
+  background: #f9b53a;
+  border-radius: 8px;
+}
+
+.headerNav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/*# sourceMappingURL=Header.module.css.map */

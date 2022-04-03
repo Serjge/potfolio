@@ -1,0 +1,14 @@
+.projectWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+@media (max-width: 1520px) {
+  .projectWrapper {
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=Projects.module.css.map */
