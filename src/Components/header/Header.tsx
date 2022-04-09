@@ -1,6 +1,6 @@
 import styles from './Header.module.scss'
 import styleContainer from "common/styles/Container.module.scss";
-import {Button, Nav} from "Components";
+import {Nav} from "Components";
 
 type HeaderPropsType = {
   onClick: () => void

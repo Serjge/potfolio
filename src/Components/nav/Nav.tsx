@@ -30,7 +30,7 @@ export const Nav = () => {
         smooth={true}
         offset={-70}
         duration={500}
-      >Проэкты</Link>
+      >Проекты</Link>
       <Link
         activeClass={styles.active}
         to="contacts"
