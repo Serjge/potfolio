@@ -1,8 +1,11 @@
 import styles from './Projects.module.scss'
 import {Project, Wrapper} from "Components";
-import todo from  'common/images/todo.jpg'
-import social from  'common/images/social.jpg'
-import learn from  'common/images/learn.jpg'
+import todo from 'common/images/todo.jpg'
+import social from 'common/images/social.jpg'
+import learn from 'common/images/learn.jpg'
+import logistic from 'common/images/logistic.jpg'
+import convector from 'common/images/convector.jpg'
+import calculator from 'common/images/calculator.jpg'
 
 type ProjectType = {
   name: string
@@ -30,19 +33,33 @@ const project: ProjectType[] = [
     gitUrl: 'https://github.com/Serjge/todolist/',
   },
   {
+    name: 'Transport logistics',
+    description: 'Транспортная логистика карта с маршрутами заявок.',
+    imgUrl: logistic,
+    projectUrl: 'https://serjge.github.io/transport_logistics/',
+    gitUrl: 'https://github.com/Serjge/transport_logistics',
+  }, {
+    name: 'Currency converter',
+    description: 'Конвектор валют можно выбрать пару валют',
+    imgUrl: convector,
+    projectUrl: 'https://serjge.github.io/currency_converter/',
+    gitUrl: 'https://github.com/Serjge/currency_converter',
+  }, {
     name: 'Social network',
     description: 'Социальная сеть — это веб-сайт, который позволяет людям со схожими интересами собираться вместе и обмениваться информацией, фотографиями и видео.',
     imgUrl: social,
     projectUrl: 'https://serjge.github.io/social_network/',
     gitUrl: 'https://github.com/Serjge/social_network',
   },
-  // {
-  //   name: 'Portfolio',
-  //   description: 'Мое портфолио',
-  //   imgUrl: portfolio,
-  //   projectUrl: 'https://serjge.github.io/potfolio/',
-  //   gitUrl: 'https://github.com/Serjge/potfolio',
-  // },
+  {
+    name: 'Calculator constructor',
+    description: 'Конструктор калькулятора, в котором можно собрать' +
+      ' калькулятор который понравится и потом считать на нем.',
+    imgUrl: calculator,
+    projectUrl: 'https://serjge.github.io/constructor_calculator/',
+    gitUrl: 'https://github.com/Serjge/constructor_calculator',
+  },
+
 
 ]
 
