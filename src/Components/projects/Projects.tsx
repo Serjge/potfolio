@@ -1,11 +1,6 @@
 import styles from './Projects.module.scss'
 import {Project, Wrapper} from "Components";
-import todo from 'common/images/todo.jpg'
-import social from 'common/images/social.jpg'
-import learn from 'common/images/learn.jpg'
-import logistic from 'common/images/logistic.jpg'
-import convector from 'common/images/convector.jpg'
-import calculator from 'common/images/calculator.jpg'
+import {todo, calculator, learn, social, logistic, convector} from 'common'
 
 type ProjectType = {
   name: string
